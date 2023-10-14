@@ -13,7 +13,7 @@ export const ContactList = ({ contacts, onDelete }) => {
           <button
             type="button"
             id={contact.name}
-            className="btn btn-outline"
+            className="btn btn-simple"
             onClick={onDelete}
           >
             Delete

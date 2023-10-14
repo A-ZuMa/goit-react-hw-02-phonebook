@@ -6,7 +6,7 @@ export class Filter extends Component {
   render() {
     return (
       <div className={styles.filterContainer}>
-        <p>Find contacts by name</p>
+        <p className={styles.filterTitle}>Find contacts by name</p>
         <Formik
           initialValues={{
             search: '',
@@ -17,7 +17,7 @@ export class Filter extends Component {
         >
           <Form>
             <div className={styles.container}>
-              <label htmlFor="search">Name</label>
+              {/* <label htmlFor="search">Name</label> */}
               <Field
                 id="search"
                 name="search"

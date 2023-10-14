@@ -33,6 +33,14 @@ a:hover,
 a:focus {
   color: var(--colorPrimary);
 }
+.main-card {
+  width: 35%;
+  background: var(--white);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 
 button {
   cursor: pointer;
@@ -43,7 +51,7 @@ button {
 
 .btn {
   padding: 10px 15px;
-  margin-left: 15px;
+  /* margin-left: 30%; */
   border-radius: 15px;
 }
 
@@ -51,7 +59,7 @@ button {
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--colorPrimary);
-  width: 100px;
+  width: 150px;
   animation: mainBtnbounce 4s infinite;
   cursor: pointer;
 }
@@ -89,6 +97,13 @@ button {
   40% {
     transform: scale(1) rotate(0);
   }
+}
+
+.btn.btn-simple {
+  border: 1px solid var(--colorPrimary);
+  color: var(--colorPrimary);
+  transition: box-shadow var(--cubic-transition), border var(--cubic-transition),
+  color var(--cubic-transition);
 }
 
 img {

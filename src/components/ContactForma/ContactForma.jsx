@@ -13,7 +13,7 @@ const SignupSchema = Yup.object().shape({
 
 export const ContactForma = ({ onAdd }) => {
   return (
-    <div className={styles.FormContainer}>
+    <div className={styles.formContainer}>
       <Formik
         initialValues={{
           name: '',
@@ -26,18 +26,18 @@ export const ContactForma = ({ onAdd }) => {
         }}
       >
         <Form>
-          <div className="styles.container">
+          <div className={styles.container}>
             <label htmlFor="name">Name</label>
-            <Field id="name" name="name" placeholder="Roise" />
+            <Field id="name" name="name" placeholder="Alex Repeta" />
             <ErrorMessage name="name" />
           </div>
-          <div className="styles.container">
+          <div className={styles.container}>
             <label htmlFor="number">Number</label>
             <Field
               type="tel"
               id="number"
               name="number"
-              placeholder="459-12-56XXX"
+              placeholder="+380-XX-XXX-XX-XX"
             />
             <ErrorMessage name="number" />
           </div>

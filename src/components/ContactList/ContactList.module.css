@@ -1,0 +1,19 @@
+.contListBox {
+  background: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 5px;
+}
+
+/* export const ListItem = styled.li` */
+.contListItem {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+  /* p {
+    min-width: 300px;
+  } */
